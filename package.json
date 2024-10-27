@@ -1,6 +1,10 @@
 {
-  "name": "ProForm.List",
-  "description": "An auto-generated demo by dumi",
+  "name": "ProFormViewActions",
+  "description": "A",
+  "author": {
+    "name": "tpa",
+    "email": "tpa@ittps.pro"
+  },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
     "@ant-design/pro-components": "^2.7.19",
@@ -8,10 +12,17 @@
     "antd": "^5.21.4",
     "antd-style": "^3.7.0",
     "axios": "^1.7.7",
+    "pm2": "^5.4.2",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1"
   },
   "devDependencies": {
-    "typescript": "^4"
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "tsx index.tsx",
+    "install": "pnpm install"
   }
 }

@@ -79,6 +79,7 @@ const Demo = () => {
           </ProFormList>
         </ProForm>
       </ProCard>
+      
       <ProCard colSpan="400px" title="配置菜单">
         <ProForm
           submitter={false}
@@ -265,7 +266,7 @@ const Demo = () => {
                     <ProFormSelect
                       width="xs"
                       name={['deleteIconProps', 'Icon']}
-                      label="图标"
+                      label="Icon"
                       request={async () => {
                         return Object.keys(IconMap).map((value) => {
                           const Icon = IconMap[value as 'PlusOutlined'];
