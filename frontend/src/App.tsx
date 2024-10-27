@@ -5,7 +5,8 @@ import { Button, Layout, Calendar, Input, Table, Tag, Card, Form } from 'antd'
 import { ProCard } from '@ant-design/pro-components'
 
 // Works also with SSR as expected
-const Card2 = lazy(() => import('./Card'))
+// const CardData = lazy(() => import('./CardData'))
+
 const HeaderS = () => (<div>
   <a href="https://vite.dev" target="_blank">
     <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -22,16 +23,14 @@ const HeaderS = () => (<div>
 
 function App() {
   return (<>
-
     <Card actions={[
       <Button type='primary'>Create</Button>
     ]} 
+
+
     title={"Новая запись"} extra={[<Tag color={"pink"} >Участник</Tag>]}>
       <Form layout='vertical' id={"customer"} >
-
         <Form.Item key={"lastname"} name={"lastname"} label={"Фамилия"}>
-
-
           <Input name='lastname' />
         </Form.Item>
         <Form.Item key={"firtname"} label={"Имя"} labelAlign='left' >
@@ -40,14 +39,12 @@ function App() {
 
         </Form.Item>
         <Form.Item name={"middlename"} label={"Отчество"}>
-
-
           <Input name='name.middlename' value={"middlename"} />
         </Form.Item>
       </Form>
 
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Status
       </p>
 
     </Card>
@@ -58,6 +55,13 @@ function App() {
       } />
     </Suspense>
 
+    <Card>
+      Белы Куна 19-1-169
+      <div>i</div>
+      <Select />
+    </Card>
+    <Card>2</Card>
+    <Card>3</Card>
 
   </>
   )
